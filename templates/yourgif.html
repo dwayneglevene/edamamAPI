@@ -8,7 +8,7 @@
 
     </head>
     <body>
-    <h1>Ingreedyents</h1>
+    <h1 class="main">Ingreedyents</h1>
     <div class="container-fluid">
     <div class="row">
 
@@ -16,10 +16,7 @@
         <h3>You requested a gif</h3> -->
         <!-- <img src="{{query}}"/> -->
    
-   <div class="col-sm-3">
-   <!-- <h1>ok</h1> -->
-   <img src="https://i.pinimg.com/originals/9b/a8/97/9ba897ff1b9864079369381d3b4b1402.gif" width="100%" height="100%">
-   </div>
+  
 <div class="col-sm-3">
    <div class="card">
   <img src="{{image[0]['recipe']['image']}}" class="card-img-top" alt="...">
@@ -50,6 +47,17 @@
     <h5 class="card-title">{{image[2]['recipe']['label']}}</h5>
     <p class="card-text">{{image[2]['recipe']['ingredientLines']}}</p>
     <a href="{{image[2]['recipe']['url']}}" class="btn btn-primary">Instructions</a>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+ <div class="card">
+  <img src="{{image[3]['recipe']['image']}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{image[3]['recipe']['label']}}</h5>
+    <p class="card-text">{{image[3]['recipe']['ingredientLines']}}</p>
+    <a href="{{image[3]['recipe']['url']}}" class="btn btn-primary">Instructions</a>
   </div>
 </div>
 </div>
